@@ -1,4 +1,4 @@
-package src.view;
+package view;
 
 public class AdminPanel {
     //nanti untuk admin kelola panel

@@ -1,18 +1,20 @@
-package src.model;
+package model;
 
 public class Studio {
+    private int studioId;
     private String namaStudio;
     private int kapasitas;
     private String tipeStudio;
 
-    //Konstruktor
-    public Studio(String namaStudio, int kapasitas, String tipeStudio) {
+    // Konstruktor
+    public Studio(int studioId, String namaStudio, int kapasitas, String tipeStudio) {
+        this.studioId = studioId;
         this.namaStudio = namaStudio;
         this.kapasitas = kapasitas;
         this.tipeStudio = tipeStudio;
     }
 
-    //Getter Setter
+    // Getter Setter
     public String getNamaStudio() {
         return namaStudio;
     }
@@ -37,5 +39,12 @@ public class Studio {
         this.tipeStudio = tipeStudio;
     }
 
-    
+    public int getStudioId() {
+        return studioId;
+    }
+
+    public void setStudioId(int studioId) {
+        this.studioId = studioId;
+    }
+
 }
